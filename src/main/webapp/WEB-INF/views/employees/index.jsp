@@ -15,7 +15,7 @@
                 <c:out value="${flush}"></c:out>
             </div>
         </c:if>
-        <h2>従業員　一覧</h2>
+        <h2>従業員 一覧</h2>
         <table id="employee_list">
             <tbody>
                 <tr>
@@ -44,7 +44,7 @@
 
         <div id="pagination">
             （全 ${employee_count} 件）<br />
-            <c:forEach var="i" begin="1" end="${((employee_count - 1) / maxrow) + 1}" step="1">
+            <c:forEach var="i" begin="1" end="${((employee_count - 1) / maxRow) + 1}" step="1">
                 <c:choose>
                     <c:when test="${i == page}">
                         <c:out value="${i}" />&nbsp;
